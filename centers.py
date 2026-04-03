@@ -1,6 +1,7 @@
 import os
 import requests
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query , Request
+from security import limiter
 
 from mock_data import MOCK_CENTERS, DISPOSAL_INSTRUCTIONS
 
@@ -16,7 +17,9 @@ CATEGORY_KEYWORDS = {
 }
 
 @router.get("/centers")
+@limiter.limit("10/minute")
 async def get_centers(
+    request: Request,
     lat: float, 
     lng: float, 
     category: str = Query(None)
