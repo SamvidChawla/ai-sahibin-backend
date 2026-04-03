@@ -1,6 +1,16 @@
+# --- Core Web Framework ---
 fastapi
 uvicorn
-python-multipart
-requests
-python-dotenv
-slowapi
+python-multipart  # Required for handling image file uploads
+
+# --- Security & Config ---
+python-dotenv     # For loading API keys from the .env file
+slowapi           # For IP-based rate limiting to protect your APIs
+
+# --- External APIs ---
+requests          # For making the HTTP call to the Google Places API
+
+# --- Machine Learning (Edge/CPU Inference) ---
+onnxruntime       # The lightweight engine to run your .onnx model
+numpy             # For matrix math and image array formatting
+pillow            # For opening and resizing the uploaded image files
