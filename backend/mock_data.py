@@ -57,6 +57,18 @@ DISPOSAL_INSTRUCTIONS = {
             "Place in the blue municipal recycling bin (Dry Waste)."
         ],
         "warning": "Ensure aerosol cans are completely empty before disposal."
+    },
+    "glass": {
+        "category": "Glass",
+        "recyclable": True,
+        "hazard_level": "Medium",
+        "steps": [
+            "Rinse out any food or liquid residue.",
+            "Do not break the glass intentionally.",
+            "Wrap safely if broken to prevent injury to sanitation workers.",
+            "Place in the designated glass recycling bin."
+        ],
+        "warning": "Mirrors, lightbulbs, and window glass are treated differently than bottle glass."
     }
 }
 

@@ -12,8 +12,8 @@ CATEGORY_KEYWORDS = {
     "plastic": "plastic recycling center OR municipal dry waste bin",
     "organic": "compost drop off OR organic waste collection green bin",
     "e-waste": "electronics recycling OR battery disposal center",
-    "cardboard": "paper and cardboard recycling center",
-    "metal": "scrap metal yard OR metal recycling"
+    "metal": "scrap metal yard OR metal recycling",
+    "glass": "glass recycling center OR glass drop off"
 }
 
 @router.get("/centers")
